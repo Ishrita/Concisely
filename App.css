@@ -1,0 +1,18 @@
+.App {
+  display: flex;
+  text-align: center;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 20px;
+  transition: margin-left 0.3s ease;
+}
+
+.with-sidebar {
+  margin-left: 200px;
+}
+
+.sidebar.collapsed + .content {
+  margin-left: 60px;
+}
