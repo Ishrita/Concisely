@@ -1,0 +1,87 @@
+/* General Container Styles */
+.landing-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  padding: 0 50px;
+  background: linear-gradient(135deg, #000, #1a1a1a);
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Left Content Styles */
+.landing-content {
+  flex: 1;
+  text-align: left;
+  padding: 20px;
+}
+
+.landing-title {
+  font-size: 3rem;
+  margin-bottom: 15px;
+}
+
+.landing-subtitle {
+  font-size: 1.5rem;
+  color: #dbeafe;
+}
+
+/* Right Side Styles */
+.landing-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+/* Button Styles */
+.landing-buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.landing-btn {
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+}
+
+.landing-btn:hover {
+  background-color: grey;
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px rgba(255, 255, 255, 0.3);
+}
+
+/* Image/Illustration Styles */
+.landing-image {
+  margin-top: 20px;
+}
+
+.illustration {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .landing-container {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .landing-right {
+    margin-top: 20px;
+  }
+}
